@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula Calculator</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Formula Calculator</h1>
+    <div class="input-group-result">
+        <label for="operation">Operation:</label>
+        <select id="operation" class="input-value">
+            <option value="formulae">Formulae</option>
+            <option value="variance">Variance</option>
+            <option value="avg">Average</option>
+            <option value="price">Price</option>
+        </select>
+    </div>
+    <div id="input-container" class="input-container">
+        <!-- Input fields will be dynamically added here -->
+    </div>
+    <button id="add-input" class="add-input-btn">+ Add Input</button>
+
+    <div class="input-group-result">
+        <label for="formula">Formula:</label>
+        <input type="text" id="formula" class="input-value" placeholder="e.g., input1" value="input1">
+    </div>
+    <div class="input-group-result">
+        <label for="result" id="result-label">Result:</label>
+        <input type="text" id="result" class="input-value" readonly>
+    </div>
+</div>
+<script src="../static/main.js"></script>
+</body>
+</html>
